@@ -35,7 +35,7 @@ const ProfilePage = () => {
           onSubmit={handleSubmit}
           className="flex flex-col  gap-5 p-10 flex-1"
         >
-          <h3 className="text-lg">Profile details</h3>
+          <h3 className="text-lg text-gray-600">Profile details</h3>
           <label
             htmlFor="avatar"
             className="flex items-center gap-3 cursor-pointer"
