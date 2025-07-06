@@ -119,7 +119,7 @@ export const forgotPassword = async (req, res) => {
       expiresIn: "15m",
     });
 
-    const resetLink = `http://localhost:5173/reset-password/${token}`;
+    const resetLink = `${process.env.FRONTEND_URL}/reset-password/${token}`;
 
     // Setup email transport (Gmail example)
     const transporter = nodemailer.createTransport({
